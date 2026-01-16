@@ -75,7 +75,7 @@ function resetGame() {
     computerScore = 0;
     playerScoreSpan.textContent = 0;
     computerScoreSpan.textContent = 0;
-    messageEl.textContent = "Choose one!";
+    messageEl.textContent = "Choose one only!";
     messageEl.className = '';
 }
 

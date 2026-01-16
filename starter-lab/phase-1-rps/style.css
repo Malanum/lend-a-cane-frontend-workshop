@@ -4,6 +4,7 @@
     --card: #ffffff;
     --primary: #3b82f6;
     --text: #1e293b;
+    --label: rgba(172, 40, 126, 0.4);
 }
 
 * {
@@ -33,3 +34,67 @@ body {
 }
 
 /* TASK: Add styles for .score-board, .choices, .choice-btn, #message, and .reset-btn below! */
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    background: var(--bg);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.score-item {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.value {
+    font-size: 2rem;
+}
+
+.label {
+    font-size: 1rem;
+    color: var(--label);
+}
+
+.choices {
+    display: flex;
+    font-size: large;
+    justify-content: space-evenly;
+    margin-bottom: 1.1rem;
+}
+
+.choice-btn {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.choice-btn:hover {
+    background-color: var(--label);
+}
+
+#message {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.reset-btn {
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.reset-btn:hover {
+    background-color: var(--label);
+}
